@@ -12,8 +12,6 @@ type Simhash
     f::Int
 
     function Simhash(value::BigInt, f::Int)
-        # assuming this is the hashed simhash value
-        # that was generated previously
         new(value, f)
     end
     function Simhash(value::Simhash, f::Int)
@@ -104,6 +102,3 @@ function build_by_features(features::Any, f)
     # numeric rep of the string/iterable
     return ans
 end
-
-#
-#

@@ -1,4 +1,5 @@
 using Base.Test
+include("simhash.jl")
 
 # ported tests
 @test Simhash(["aaa", "bbb"], 64).value == 8637903533912358349

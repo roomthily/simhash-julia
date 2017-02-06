@@ -37,7 +37,7 @@ end
 function _hashfunc(x)
     h = Hasher("md5")
     update!(h, x)
-    return parse(UInt128, hexdigest!(h), 16)
+    return parse(BigInt, hexdigest!(h), 16)
 end
 
 function distance(one::Simhash, another::Simhash)
